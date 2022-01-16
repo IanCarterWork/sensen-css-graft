@@ -13,7 +13,7 @@
 /* Champs input */
 .ui-field:not(label){
     width: calc(100% - 2rem);
-    padding: .5rem 1rem;
+    padding: var(--ui-padding-v) var(--ui-padding-h);
 }
 
 .ui-field input.field-input:not([type="checkbox"]):not([type="radio"]){
@@ -21,7 +21,7 @@
     border: 1px solid var(--color-layer-lite);
     border-radius: 3rem;
     /* width: calc(100% - 2rem); */
-    padding: .5rem 1rem;
+    padding: var(--ui-padding-v) var(--ui-padding-h);
 }
 
 .ui-field label{
@@ -29,6 +29,12 @@
     padding: .5rem .8rem;
     border-radius: 3rem;
 }
+
+.ui-field .field-label{
+    font-size: 12px;
+    padding: var(--ui-padding-v) var(--ui-padding-h);
+}
+
 
 .ui-field.field-text{
     padding: var(--ui-padding-h);
@@ -48,7 +54,7 @@ button{
     background-color: transparent;
     border: 1px solid var(--color-one);
     border-radius: var(--ui-border-raduis);
-    padding: .5rem 1rem;
+    padding: var(--ui-padding-v) var(--ui-padding-h);
 }
 button.active,
 button:hover
