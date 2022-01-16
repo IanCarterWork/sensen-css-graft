@@ -32,7 +32,7 @@
 
 .ui-field .field-label{
     font-size: 12px;
-    padding: var(--ui-padding-v) var(--ui-padding-h);
+    padding: 0 var(--ui-padding-h);
 }
 
 

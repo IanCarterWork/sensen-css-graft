@@ -1,0 +1,177 @@
+
+*{
+    color: inherit;
+    /* font-size: inherit; */
+    font-weight: inherit;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 85%;
+    color: var(--color-text);
+    background-color: var(--color-layer);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Divers */
+.ui-thumb{
+    max-height: 60vh;
+}
+.ui-thumb img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.ui-title,
+.ui-title-big,
+.ui-title-small
+{
+    padding-left: var(--ui-padding-h);
+    padding-right: var(--ui-padding-h);
+}
+
+.ui-title-small{
+    font-size: 18px;
+}
+
+.ui-title{
+    font-size: 24px;
+}
+
+.ui-title-big{
+    font-size: 48px;
+}
+
+[class*="ui-title"] + [class*="ui-title"] {
+    padding-top: 0;
+    margin-top: calc(-1 *  ( var(--ui-padding-h) / 2) );
+}
+
+[class*="ui-title"] + .ui-title-big {
+    margin-top: calc(-1 *  ( var(--ui-padding-h) ) );
+}
+
+
+[class*="ui-title"].title-block{
+    margin-top:2rem;
+}
+
+
+
+.ui-content,
+.ui-infos{
+    padding-left: var(--ui-padding-h);
+    padding-right: var(--ui-padding-h);
+}
+
+.ui-infos{
+    font-size: 12px;
+    opacity: .75;
+}
+.ui-infos i{
+    margin-right: .5rem;
+}
+
+
+
+
+
+/* Padding */
+
+.ui-encaps-smaller{
+    padding: .3rem .7rem;
+}
+.ui-encaps-small{
+    padding: .5rem .8rem;
+}
+.ui-encaps{
+    padding: .8rem 1.8rem;
+}
+.ui-encaps-big{
+    padding: 1rem 2rem;
+}
+.ui-encaps-bigger{
+    padding: 1.5rem 3rem;
+}
+
+
+
+
+
+/* Margin */
+
+.ui-encaps-smaller{
+    margin: .3rem .7rem;
+}
+.ui-encaps-small{
+    margin: .5rem .8rem;
+}
+.ui-encaps{
+    margin: .8rem 1.8rem;
+}
+.ui-encaps-big{
+    margin: 1rem 2rem;
+}
+.ui-encaps-bigger{
+    margin: 1.5rem 3rem;
+}
+
+
+
+
+
+
+/* Calques */
+.layer-box,
+.layer-box-clean
+{
+    background-color: var(--color-layer-lite);
+}
+
+.layer-box{
+    padding: var(--ui-padding-v) var(--ui-padding-h);
+}
+
+.layer-box-clean{
+    padding: 0;
+}
+
+
+/* Couleurs */
+
+.ui-xlayer{
+    color: var(--color-text) !important;
+    background-color: var(--color-layer) !important;
+    border-color: var(--color-layer) !important;
+}
+
+.ui-warning{
+    color: var(--color-warning-text) !important;
+    background-color: var(--color-warning) !important;
+    border-color: var(--color-warning) !important;
+}
+
+.ui-error{
+    color: var(--color-error-text) !important;
+    background-color: var(--color-error) !important;
+    border-color: var(--color-error) !important;
+}
+
+.ui-success{
+    color: var(--color-success-text) !important;
+    background-color: var(--color-success) !important;
+    border-color: var(--color-success) !important;
+}
+
