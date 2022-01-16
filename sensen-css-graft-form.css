@@ -5,23 +5,19 @@
 }
 
 
-.ui-form .form-container{
-    padding: var(--ui-padding-h) 0;
-}
-
 
 /* Champs input */
 .ui-field:not(label){
     width: calc(100% - 2rem);
-    padding: var(--ui-padding-v) var(--ui-padding-h);
+    padding: .5rem 1rem;
 }
 
 .ui-field input.field-input:not([type="checkbox"]):not([type="radio"]){
     background-color: var(--color-layer);
     border: 1px solid var(--color-layer-lite);
     border-radius: 3rem;
-    /* width: calc(100% - 2rem); */
-    padding: var(--ui-padding-v) var(--ui-padding-h);
+    width: calc(100% - 2rem);
+    padding: .5rem 1rem;
 }
 
 .ui-field label{
@@ -30,23 +26,12 @@
     border-radius: 3rem;
 }
 
-.ui-field .field-label{
-    font-size: 12px;
-    padding: 0 var(--ui-padding-h);
-}
-
-
-.ui-field.field-text{
-    padding: var(--ui-padding-h);
-    font-size: 12px;
-}
-
-.ui-form .form-buttons{
+.form-buttons{
     padding:2rem 0 0;
 }
 
-.ui-form .form-buttons .form-button{
-    margin: .25rem;
+.form-buttons .form-button{
+    margin:0 .2rem;
 }
 
 
@@ -54,7 +39,7 @@ button{
     background-color: transparent;
     border: 1px solid var(--color-one);
     border-radius: var(--ui-border-raduis);
-    padding: var(--ui-padding-v) var(--ui-padding-h);
+    padding: .5rem 1rem;
 }
 button.active,
 button:hover
