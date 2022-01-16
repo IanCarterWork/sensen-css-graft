@@ -1,0 +1,20 @@
+
+/* Text */
+
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+
+.text-one{color: var(--color-one)}
+.text-two{color: var(--color-two)}
+.text-three{color: var(--color-three)}
+.text-four{color: var(--color-four)}
+.text-five{color: var(--color-five)}
+
+.text-encaps{ padding: .5rem .8rem; }
+.text-encaps-v{ padding: 1rem .8rem; }
+
+.text-miniman{
+    font-size: 12px;
+    font-style: italic;
+}

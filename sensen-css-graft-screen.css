@@ -1,0 +1,63 @@
+
+.ui-header{
+    background-color: transparent;
+}
+
+.ui-screen-full{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    color: #fff;
+    background-color: var(--color-one);
+    background-image: linear-gradient(120deg, var(--color-four), var(--color-two));
+}
+
+.ui-screen-full > *{
+    position: absolute;
+    top:0; left:0;
+    width: 100%; height: 100%;
+}
+
+.ui-screen-full > .screen-back{
+    opacity: .2;
+}
+
+.ui-screen-full > .screen-back img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.ui-screen-full .ui-title{
+    font-size: 32px;
+}
+
+
+.ui-screen-full .form-box{
+    background-color: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    padding-bottom: 2rem;
+    width: calc(100% - 1.5rem);
+    border-radius: 1.3rem;
+    backdrop-filter: blur(1.5rem);
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
+}
+
+
+
+
+.ui-screen-full .ui-form .ui-field .field-input{
+    background-color: rgba(255,255,255,.1) !important;
+    color:#fff;
+    border: 1px solid rgba(255,255,255,.1) !important;
+}
+
+.ui-screen-full .ui-form .ui-field.field-text{
+    font-size: 11px !important;
+}
+
+.ui-screen-full .ui-form .ui-field .field-input,
+.ui-screen-full .ui-form .ui-field .field-input::placeholder
+{
+    color:#fff;
+}
