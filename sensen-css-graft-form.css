@@ -1,0 +1,114 @@
+
+.ui-form{
+    width: 100%;
+    max-width: 480px;
+}
+
+
+.ui-form .form-container{
+    padding: var(--ui-padding-h) 0;
+}
+
+
+/* Champs input */
+.ui-field:not(label){
+    width: calc(100% - 2rem);
+    padding: .5rem 1rem;
+}
+
+.ui-field input.field-input:not([type="checkbox"]):not([type="radio"]){
+    background-color: var(--color-layer);
+    border: 1px solid var(--color-layer-lite);
+    border-radius: 3rem;
+    /* width: calc(100% - 2rem); */
+    padding: .5rem 1rem;
+}
+
+.ui-field label{
+    background-color: var(--color-layer-lite-rgb);
+    padding: .5rem .8rem;
+    border-radius: 3rem;
+}
+
+.ui-field.field-text{
+    padding: var(--ui-padding-h);
+    font-size: 12px;
+}
+
+.ui-form .form-buttons{
+    padding:2rem 0 0;
+}
+
+.ui-form .form-buttons .form-button{
+    margin: .25rem;
+}
+
+
+button{
+    background-color: transparent;
+    border: 1px solid var(--color-one);
+    border-radius: var(--ui-border-raduis);
+    padding: .5rem 1rem;
+}
+button.active,
+button:hover
+{
+    color: #fff;
+    background-color: var(--color-one);
+}
+
+input[type="checkbox"]
+, input[type="radio"]
+{
+    position: relative;
+    appearance: none;
+    width:40px;
+    height:20px;
+    background-color: rgba(0,0,0,0.2);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 3rem;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    align-items: center;
+    transition: all ease 250ms;
+}
+
+input[type="checkbox"]:disabled
+, input[type="radio"]:disabled
+{
+    filter: grayscale(5);
+    opacity:.5;
+}
+
+input[type="checkbox"]:checked
+, input[type="radio"]:checked
+{
+    /* justify-content: flex-end; */
+    background-color: var(--color-layer-rgb);
+    border-color: var(--color-layer-lite);
+}
+
+input[type="checkbox"]::after
+, input[type="radio"]::after
+{
+    display: block;
+    content:"";
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--color-text);
+    transition: all ease 250ms;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+input[type="checkbox"]:checked::after
+, input[type="radio"]:checked::after
+{
+    background-color: var(--color-one);
+    border-color: var(--color-one);
+    left:50%;
+}
