@@ -1,0 +1,36 @@
+
+
+.splashscreen{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0; left:0;
+    z-index: 999999999;
+    color: #777;
+    background-color: #242424;
+    background-color: var(--color-layer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 160ms ease-in-out;
+}
+
+.splashscreen.hide{
+    transform: scale(2);
+    opacity: 0;
+}
+
+
+.splashscreen .splashscreen-title{
+    font-size: 12px;
+}
+
+.splashscreen .splashscreen-logo{
+    width: 128px;
+    height: auto;
+    object-fit: cover;
+}
+
