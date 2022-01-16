@@ -1,0 +1,31 @@
+
+/* Slide */
+.ui-slide{
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.ui-slide::-webkit-scrollbar {
+    display: none;
+}
+.ui-slide.slide-buttons{
+    height:48px;
+}
+.ui-slide.slide-buttons .slide-button{
+    white-space: nowrap;
+    border-radius: 3rem;
+    color: #fff;
+    background-color: var(--color-one);
+    padding: .5rem 1rem;
+    text-align: center;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.ui-slide.slide-buttons .slide-button:first-child{
+    margin-left: 1rem;
+}
+.ui-slide.slide-buttons .slide-button:last-child{
+    margin-right: 1rem;
+}
+
