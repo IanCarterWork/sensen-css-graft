@@ -11,6 +11,16 @@
 .text-four{color: var(--color-four)}
 .text-five{color: var(--color-five)}
 
+.text-color{color: var(--color-text)}
+.text-layer{color: var(--color-layer)}
+.text-layer-lite{color: var(--color-layer-lite)}
+.text-layer-high{color: var(--color-layer-high)}
+
+.text-white{color: #fff;}
+.text-black{color: #000;}
+.text-light{color: #bfbfbf;}
+.text-dark{color: #242424;}
+
 .text-encaps{ padding: .5rem .8rem; }
 .text-encaps-v{ padding: 1rem .8rem; }
 
